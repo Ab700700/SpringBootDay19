@@ -1,0 +1,52 @@
+
+	* ->  means output.	
+
+
+	q1 - -> hey from message1
+		returns "1" to the container.
+
+
+	q2- -> hey from message2
+		getMessage2 data takes "1" from getMessage1 and returns it to the container.
+
+	    -> hey from message1
+		returns "1"
+
+	q3- -> hey from message3
+		returns "3" to the container.
+
+	    -> hey from message2
+		returns "3" which is came from message3 method, to the container.
+
+	    -> hey from message1
+		returns "1" to the container.
+
+
+	q4- -> hey from message3
+		return "3" to the container.
+
+	    -> hey from message2
+		data = "3" because getMessage3 returns "3" and also returns it to the container.
+
+   		MainController.data = "1";
+	    -> hey from main controller 
+
+
+	
+	q5- -> hey from message3
+		returns "3" to the contaier.
+
+	    -> hey from message2
+		data for getMessage2 will take "3" because getMessage3 returns "3"
+
+	      MainController.data = "3";
+	    -> hey from main controller
+
+	    -> hey from message1
+	      return "1" to the container.
+ 
+
+			
+	    
+
+	
